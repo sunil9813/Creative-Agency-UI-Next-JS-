@@ -1,0 +1,376 @@
+/*  Hero Section */
+.hero {
+  text-align: center;
+  padding: $xl-6 0;
+  padding-top: $xll-3;
+  height: 90vh !important;
+  overflow: hidden !important;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -40%;
+    width: 180%;
+    height: 200vh;
+    background-image: url("../assets/images/art-top-cropp.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    overflow-x: hidden !important;
+  }
+  .hero-title {
+    font-size: $xll-3;
+    line-height: 115px;
+    font-weight: 600;
+    margin: $xl-6 0;
+  }
+  .sub-heading {
+    display: flex;
+    justify-content: center;
+    .titleSm {
+      margin: 0 $xl-1;
+    }
+    span {
+      font-size: $xll;
+      line-height: 0;
+      color: $green;
+    }
+  }
+}
+.hero-sec {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -10%;
+    left: 0%;
+    width: 100%;
+    height: 200px;
+    z-index: -1;
+    background-color: $dark;
+    filter: blur(20px);
+  }
+}
+
+// expertise
+.expertise {
+  .card-img {
+    height: 300px;
+  }
+}
+
+//banner
+.banner {
+  margin-top: $xll-3;
+  .container {
+    border-radius: 50px 0 50px 0;
+    padding: $xll;
+    background: rgb(192, 90, 255);
+    background: $gradient;
+    @include flex(center, space-between, none);
+  }
+}
+
+//testimonial
+.testimonial {
+  .card {
+    padding: 20px;
+  }
+  .cards {
+    margin-top: $xll;
+    p {
+      margin-bottom: $xl-3;
+      font-size: $xl;
+      line-height: $xl-5;
+    }
+    .image {
+      @include flex(center, none, none);
+      margin-bottom: $xl-4;
+      .img {
+        width: $xll-3;
+        height: $xll-3;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+      }
+      .img-text {
+        margin-left: $xl-3;
+        h3 {
+          font-size: $xl-2;
+          margin-bottom: $s;
+        }
+        span {
+          color: rgba($white, 0.5);
+          text-transform: uppercase;
+          font-size: $sm;
+          letter-spacing: 3px;
+        }
+      }
+    }
+  }
+}
+
+//showcase
+.showcase {
+  .card-img {
+    height: 400px;
+  }
+  .links {
+    @include flex(none, flex-end, none);
+  }
+}
+
+//brand
+.brand-content {
+  img {
+    opacity: 0.5;
+    transition: 0.5s ease-in-out;
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+}
+
+//blog-card
+.blog-card {
+  .card {
+    @include flex(none, space-between, none);
+    .card-img {
+      width: 40%;
+      height: 250px;
+    }
+    .card-details {
+      width: 55%;
+      padding: $xll 0;
+    }
+  }
+}
+
+// footer
+footer {
+  position: relative;
+  padding: $xll-3 0 0 0;
+  border-top: 1px solid rgba($white, 0.2);
+  overflow: hidden;
+  .logobg {
+    line-height: 0;
+    padding-top: $xl-1;
+    margin-bottom: $xll;
+  }
+  h3 {
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: $lg;
+    margin-bottom: $xl-6;
+  }
+  span,
+  p {
+    color: rgba($white, 0.5);
+  }
+  ul li a {
+    color: rgba($white, 0.5);
+    transition: 0.5s ease-in-out;
+    margin-bottom: $xl-2;
+    display: block;
+    &:hover {
+      color: $green;
+    }
+  }
+  .connect {
+    @include flex(center, space-between, none);
+    span {
+      font-size: $sm;
+      letter-spacing: 2px;
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100% !important;
+    height: 60vh;
+    background-image: url("../assets/images/blurfooter-min.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+  }
+}
+
+//Agency Page
+.bg-top {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 60vh;
+    background-image: url("../assets/images/blurfooter-min.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    transform: rotate(180deg);
+  }
+}
+.agency {
+  .content {
+    margin-top: $xll;
+    h1 {
+      font-size: $xl-6;
+    }
+    .box {
+      h1 {
+        font-size: 60px;
+        font-weight: 400;
+      }
+    }
+    .misson-p {
+      border-left: 5px solid $indigo;
+      padding-left: $xl-5;
+    }
+  }
+}
+
+.showcase {
+  img {
+    width: 300px;
+  }
+  .btn {
+    @include flex(center, center, none);
+  }
+}
+
+//contact
+.contact {
+  .left {
+    padding-right: 60px;
+    ul {
+      @include flex(center, space-between, none);
+      margin-top: $xll;
+    }
+    .icon {
+      width: 50px;
+      height: 50px;
+      border: 1px solid rgba($white, 0.2);
+      border-radius: 10px 0 10px 0;
+      @include flex(center, center, none);
+    }
+    .box {
+      margin-bottom: $xll;
+      .icons {
+        color: $green;
+      }
+      h3 {
+        padding: $xl-2 0;
+      }
+      span {
+        opacity: 0.5;
+      }
+    }
+  }
+  .right {
+    border-radius: 50px 0 50px 0;
+    padding: $xll;
+    background-color: #171e20;
+    form {
+      margin-top: $xll;
+    }
+    .inputs {
+      margin-bottom: $xl-6;
+      span {
+        text-transform: uppercase;
+      }
+      textarea,
+      input {
+        width: 100%;
+        background-color: $white;
+        padding: 15px;
+        margin-top: $sm;
+        color: $dark;
+      }
+    }
+    button {
+      width: 100%;
+      padding: 18px;
+    }
+  }
+}
+
+//single page
+.post-details {
+  .heading-title {
+    .desc {
+      text-align: left;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .banner {
+    .container {
+      @include flex(center, none, column);
+      button {
+        margin-top: 50px;
+      }
+      h1 {
+        font-size: 30px;
+      }
+    }
+  }
+
+  .blog-card {
+    .card {
+      @include flex(none, none, column);
+      .card-img {
+        width: 100%;
+        height: 300px;
+      }
+      .card-details {
+        width: 100%;
+        padding: 0;
+      }
+    }
+  }
+  .w-30,
+  .w-40,
+  .w-50,
+  .w-60,
+  .w-70 {
+    width: 100%;
+    margin: 0;
+  }
+  .agency {
+    .flex,
+    .flex1 {
+      flex-direction: column;
+    }
+    .grid-3 {
+      @include grid(repeat(3, 1fr), 50px);
+    }
+  }
+  .contact {
+    .content {
+      .left {
+        text-align: center;
+        margin-bottom: 50px;
+        ul {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          li {
+            margin: 0 20px;
+          }
+        }
+      }
+      flex-direction: column;
+    }
+  }
+}

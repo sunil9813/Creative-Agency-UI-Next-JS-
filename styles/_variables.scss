@@ -1,0 +1,50 @@
+$s: 12px;
+$sm: 14px;
+$md: 15px;
+$lg: 16px;
+$xl: 17px;
+$xl-1: 18px;
+$xl-2: 20px;
+$xl-3: 22px;
+$xl-4: 25px;
+$xl-5: 30px;
+$xl-6: 35px;
+$xll: 60px;
+$xll-2: 80px;
+$xll-3: 100px;
+
+$shadow-md: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+p {
+  font-size: $xl-2;
+}
+.desc-p {
+  font-size: $lg;
+  line-height: $xl-5;
+  color: rgba($white, 0.6);
+  margin: $xl-3 0;
+}
+.w-30 {
+  width: 30%;
+}
+.w-40 {
+  width: 40%;
+}
+.w-50 {
+  width: 50%;
+}
+.w-60 {
+  width: 60%;
+}
+.w-70 {
+  width: 70%;
+}
+.round {
+  border-radius: 50px 0 50px 0;
+}
+.ml {
+  margin-left: 50px;
+}
+.mr {
+  margin-left: 50px;
+}

@@ -1,0 +1,158 @@
+@import "function";
+
+.title-logo {
+  font-size: $xl-6;
+  -webkit-text-stroke: 1px $white;
+  color: transparent;
+  span {
+    font-size: $xl-5;
+    -webkit-text-stroke: $green;
+    color: $green;
+  }
+}
+.logobg {
+  font-size: $xll;
+  span {
+    font-size: 50px;
+  }
+}
+.titleSm {
+  font-size: $xl-3;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.title {
+  font-size: $xl-5;
+  font-weight: 500;
+  background: $gradient2;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.title-bg {
+  font-size: 40px;
+}
+.secondary-button,
+.button-primary {
+  text-transform: capitalize;
+  color: $dark;
+  padding: 13px 40px;
+  background-color: $green;
+  font-size: $md;
+  border-radius: 50px;
+  box-shadow: $shadow-md;
+  cursor: pointer;
+}
+.secondary-button {
+  background-color: #171e20;
+  box-shadow: none;
+  color: $white;
+  padding: 20px 60px;
+  font-size: $lg;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: rgba($dark, 5) 0px 7px 29px 0px;
+  transition: 0.5s ease-in-out;
+  &:hover {
+    color: $green;
+  }
+}
+.heading-title {
+  text-align: center;
+  max-width: 65%;
+  margin: auto;
+  padding-top: $xll-3;
+  padding-bottom: $xl-4;
+  p {
+    margin: $xl-6 0;
+    color: rgba($white, 0.5);
+  }
+}
+.card {
+  h1 {
+    transition: 0.5s;
+    &:hover {
+      color: $green;
+      cursor: pointer;
+    }
+  }
+  .card-img {
+    margin-bottom: 30px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50px 0 50px 0;
+    }
+  }
+  a {
+    display: flex;
+    align-items: center;
+    color: $indigo;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: $sm;
+    .link-icon {
+      margin-left: $sm;
+    }
+  }
+  span {
+    color: rgba($white, 0.4);
+    margin-top: $xl-3;
+    display: block;
+    letter-spacing: 2px;
+    font-size: $sm;
+  }
+  ul {
+    margin-top: $xl-6;
+  }
+  ul li {
+    margin-bottom: $xl-2;
+    opacity: 0.5;
+  }
+  .title-link {
+    display: block !important;
+    color: $white;
+    letter-spacing: 0px !important;
+    text-transform: capitalize;
+  }
+}
+
+.slick-arrow .next,
+.slick-arrow .prev {
+  position: absolute;
+  top: 45%;
+  width: 50px;
+  height: 50px;
+  background-color: $indigo;
+  z-index: 1;
+  border-radius: 50%;
+  @include flex(center, center, none);
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.slick-arrow .next {
+  right: -50px;
+}
+.slick-arrow .prev {
+  left: -50px;
+}
+.slick-slider {
+  margin: 0 -15px;
+}
+@media screen and (max-width: 800px) {
+  .slick-arrow .next {
+    top: 0;
+    right: 0;
+  }
+  .slick-arrow .prev {
+    top: 0;
+    left: 85%;
+  }
+  .heading-title {
+    max-width: 100%;
+    padding: 50px 0;
+  }
+}
