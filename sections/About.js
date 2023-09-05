@@ -3,13 +3,13 @@ import Brand from "@/components/Brand"
 import Testimonial from "@/components/Testimonial"
 import { Title, TitleSm } from "@/components/common/Title"
 
-const Agency = () => {
+const About = () => {
   return (
     <>
       <section className='agency bg-top'>
         <div className='container'>
           <div className='heading-title'>
-            <TitleSm title='ABOUT AGENCY' /> <br />
+            <TitleSm title='ABOUT CRYPTOCURENCY' /> <br />
             <br />
             <Title title='The last digital agency you will ever need!' className='title-bg' />
           </div>
@@ -62,4 +62,4 @@ const Agency = () => {
   )
 }
 
-export default Agency
+export default About

@@ -26,8 +26,8 @@ const Contact = () => {
                 </div>
                 <div className='box'>
                   <IoLocationOutline size={30} className='icons' />
-                  <h3>New York</h3>
-                  <span>990 Madison Ave, Midtown Manhattan, 2th Floor, NY 10022</span>
+                  <h3>Bandung Indonesia</h3>
+                  <span>Telkom University, TULT, 13th Floor, MBC Laboratory</span>
                 </div>
                 <div className='box'>
                   <FiHelpCircle size={30} className='icons' />

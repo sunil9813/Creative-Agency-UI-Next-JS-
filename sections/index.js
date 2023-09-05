@@ -1,5 +1,5 @@
 import Hero from "./Hero"
-import Agency from "./Agency"
+import Agency from "./About"
 import ShowCase from "./ShowCase"
 import Team from "./Team"
 import Blog from "./Blog"

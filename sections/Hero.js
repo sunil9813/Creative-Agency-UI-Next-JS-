@@ -1,5 +1,6 @@
 import { home } from "@/assets/data/dummydata"
 import Banner from "@/components/Banner"
+import Coins from "@/components/Coins"
 import Expertise from "@/components/Expertise"
 import ShowCase from "@/components/ShowCase"
 import Testimonial from "@/components/Testimonial"
@@ -12,13 +13,13 @@ const Hero = () => {
     <>
       <section className='hero'>
         <div className='container'>
-          <TitleLogo title='creative' caption='7' className='logobg' />
-          <h1 className='hero-title'>WE BUILD DIGITAL EXPERIENCES</h1>
+          <TitleLogo  caption='Coins' title='MBC'  className='logobg' />
+          <h1 className='hero-title'>WE BUILD CRYPTOCURENCY ANALYSIS</h1>
 
           <div className='sub-heading'>
-            <TitleSm title='WEBSITES' /> <span>.</span>
-            <TitleSm title='BRANDING' /> <span>.</span>
-            <TitleSm title='DIGITAL MARKETING' />
+            <TitleSm title='Multimedia' /> <span>.</span>
+            <TitleSm title='Big Data' /> <span>.</span>
+            <TitleSm title='Cybersecurity' /> 
           </div>
         </div>
       </section>
@@ -28,6 +29,7 @@ const Hero = () => {
             <Title title='The last digital agency you ll ever need' />
             <p>Suspendisse ut magna porttitor, sollicitudin ligula at, molestie dolor. Vivamus a ligula ut velit placerat egestas at id leo. Nulla ac volutpat nunc. Nulla facilisi. Pellentesque tempus tellusut magna porttitor scelerisque.</p>
           </div>
+          <Coins />
           <div className='hero-content grid-4'>
             {home.map((item, i) => (
               <div className='box' key={i}>
@@ -39,11 +41,13 @@ const Hero = () => {
           </div>
         </div>
       </section>
+      
+      
       <Expertise />
-      <Banner />
       <Testimonial />
       <ShowCase />
       <Brand />
+      <Banner />
 
       <div className='text-center'>
         <Title title='Latest news & articles' />
