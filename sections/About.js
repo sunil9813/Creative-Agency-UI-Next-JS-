@@ -9,55 +9,64 @@ const About = () => {
       <section className='agency bg-top'>
         <div className='container'>
           <div className='heading-title'>
-            <TitleSm title='ABOUT CRYPTOCURENCY' /> <br />
+            <TitleSm title='ABOUT US' /> <br />
             <br />
-            <Title title='The last digital agency you will ever need!' className='title-bg' />
+            <Title title='MBCcoins: Menghadirkan Revolusi Keuangan Digital' className='title-bg' />
           </div>
 
-          <div className='content flex1'>
+          <div className='content flex'>
             <div className='left w-60 py'>
-              <TitleSm title='Turning your business ideas into smart digital products since 2001' />
-              <p className='desc-p'> Cripto</p>
+              <TitleSm title='Kisah Kami' />
+              <p className='desc-p'>MBCcoins lahir dari sebuah tugas kolaborasi caas csXbd MBC laboratorium yang menghadirkan mata uang kripto ke dalam kehidupan sehari-hari. Di balik layar, kami adalah tim multidisiplin yang terdiri dari para caas periset pemikir terbaik dalam dunia kripto. Kami membawa pengalaman pengetahuan pemograman kami dalam pengembangan data blockchain, keamanan kripto, dan inovasi teknologi ke dalam setiap produk dan layanan yang kami tawarkan.</p>
               <div className='grid-3'>
                 <div className='box'>
-                  <h1 className='indigo'>10+</h1>
-                  <h3>Years of experience</h3>
-                </div>
+              </div>
                 <div className='box'>
-                  <h1 className='indigo'>50+</h1>
-                  <h3>Successful cases</h3>
-                </div>
+              </div>
                 <div className='box'>
-                  <h1 className='indigo'>12+</h1>
-                  <h3>Industry awards</h3>
-                </div>
+              </div>
               </div>
             </div>
             <div className='right w-40 ml'>
-              <img src='/images/s1.jpg' alt='Img' className='round' width='100%' height='100%' />
+              <img src='/images/s1.jpg' alt='Img' className='round' width='80%' height='80%' />
+            </div>
+          </div>
+
+          <div className='content flex1'>
+            <div className='left w-40 py'>
+              <img src='/images/s4.jpg' alt='Img' className='round' width='90%' height='90%' />
+            </div>
+            <div className='right w-60 ml'>  
+            <br />
+              <br />
+                <br />
+                  <br />
+
+              <TitleSm title='Misi Kami' />
+              <p className='desc-p'>Misi kami adalah untuk memberikan sumber daya yang mudah diakses dan informatif tentang mata uang kripto, serta menyediakan platform yang aman dan mudah digunakan untuk membeli, menjual, dan menyimpan berbagai kripto populer.</p>
             </div>
           </div>
 
           <div className='content flex'>
-            <div className='left w-40 py'>
-              <img src='/images/s4.jpg' alt='Img' className='round' width='100%' height='100%' />
+            <div className='left w-60 py'>
+              <TitleSm title='Bergabunglah dengan Perjalanan Kami'/>
+              <p className='desc-p'>Apakah Anda seorang pemula yang ingin memulai perjalanan kripto Anda atau seorang investor berpengalaman yang mencari platform terpercaya, MBC Coins menyambut Anda. Bergabunglah dengan kami hari ini dan mulailah menjelajahi dunia mata uang kripto dengan keyakinan dan pengetahuan.</p>
+              <div className='grid-3'>
+                <div className='box'>
+              </div>
+                <div className='box'>
+              </div>
+                <div className='box'>
+              </div>
+              </div>
             </div>
-            <div className='right w-60 ml'>
-              <TitleSm title='Our mission' />
-              <br />
-              <p className='misson-p'>Fusce fringilla justo vel dui consectetur, fringilla maximus ante malesuada. Suspendisse facilisis nisl augue, ut sollicitudin lectus ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis esse vitae officia nostrum facere. Fugiat voluptates, expedita dolore at perferendis quae libero fuga consequatur veniam, eius non fugit nulla vitae?</p>
+            <div className='right w-40 ml'>
+              <img src='/images/s1.1.jpg' alt='Img' className='round' width='80%' height='80%' />
             </div>
           </div>
-        </div>
-      </section>
 
-      <Brand />
-      <Testimonial />
-      <Banner />
-      <br />
-      <br />
-      <br />
-      <br />
+          </div>
+          </section>
     </>
   )
 }
