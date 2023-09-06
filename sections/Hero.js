@@ -42,17 +42,6 @@ const Hero = () => {
         </div>
       </section>
       
-      
-      <Expertise />
-      <Testimonial />
-      <ShowCase />
-      <Brand />
-      <Banner />
-
-      <div className='text-center'>
-        <Title title='Latest news & articles' />
-      </div>
-      <BlogCard />
     </>
   )
 }
