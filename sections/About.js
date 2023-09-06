@@ -17,7 +17,7 @@ const About = () => {
           <div className='content flex1'>
             <div className='left w-60 py'>
               <TitleSm title='Turning your business ideas into smart digital products since 2001' />
-              <p className='desc-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus eleifend magna, molestie iaculis sem pulvinar eu. Etiam non dui felis. Proin posuere dapibus magna laoreet posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim, sem eget sollicitudin tempor, libero velit aliquam enim, vel egestas tortor ante quis sem.</p>
+              <p className='desc-p'> Cripto</p>
               <div className='grid-3'>
                 <div className='box'>
                   <h1 className='indigo'>10+</h1>
