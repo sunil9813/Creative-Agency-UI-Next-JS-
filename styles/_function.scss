@@ -18,6 +18,9 @@
 .grid-4 {
   @include grid(repeat(4, 1fr), 50px);
 }
+.grid-5 {
+  @include grid(repeat(5, 1fr), 50px);
+}
 
 .grid-6 {
   @include grid(repeat(6, 1fr), 30px);
@@ -39,7 +42,8 @@
   .grid-2,
   .grid-3,
   .grid-6,
-  .grid-4 {
+  .grid-4,
+  .grid-5 {
     @include grid(repeat(1, 1fr), 50px);
   }
 }

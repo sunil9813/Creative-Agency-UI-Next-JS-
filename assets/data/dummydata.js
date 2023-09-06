@@ -171,7 +171,7 @@ export const blogdata = [
     date: "OCTOBER 8, 2023",
   },
 ]
-export const teamdata = [
+export const teamdata1 = [
   {
     id: 1,
     title: "Alexander Black",
@@ -202,22 +202,24 @@ export const teamdata = [
     cover: "../images/t5.jpg",
     post: "MARKETING DIRECTOR",
   },
-  {
-    id: 6,
-    title: "Gregory Windstorm",
-    cover: "../images/t6.jpg",
-    post: "ACCOUNTING MANAGER",
-  },
-  {
-    id: 7,
-    title: "Anna Red",
-    cover: "../images/t7.jpg",
-    post: "PROJECT MANAGER",
-  },
-  {
-    id: 8,
-    title: "Join our team!",
-    cover: "../images/t8.jpg",
-    post: "",
-  },
+]
+export const teamdata2 = [
+{
+  id: 6,
+  title: "Gregory Windstorm",
+  cover: "../images/t6.jpg",
+  post: "ACCOUNTING MANAGER",
+},
+{
+  id: 7,
+  title: "Anna Red",
+  cover: "../images/t7.jpg",
+  post: "PROJECT MANAGER",
+},
+{
+  id: 8,
+  title: "Join our team!",
+  cover: "../images/t8.jpg",
+  post: "",
+},
 ]

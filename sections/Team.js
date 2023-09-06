@@ -1,28 +1,55 @@
-import { teamdata } from "@/assets/data/dummydata"
-import { Card } from "@/components/common/Card"
-import { Title, TitleSm } from "@/components/common/Title"
-import team from "@/pages/team"
-import React from "react"
+import React  from 'react';
+import { motion } from 'framer-motion'; 
+import { useInView } from 'react-intersection-observer';
+import { teamdata1, teamdata2 } from '@/assets/data/dummydata'; 
+import { Card } from '@/components/common/Card';
+import { Title, TitleSm } from '@/components/common/Title';
 
 const Team = () => {
+  const [bagiancs, inView1] = useInView({triggerOnce: true}); 
+  const [bagianbd, inView2] = useInView({triggerOnce: true}); 
+
   return (
     <>
-      <section className='agency bg-top'>
+      <section className='agency bg-top' ref={bagiancs}>
         <div className='container'>
           <div className='heading-title'>
-            <TitleSm title='MEET OUR TEAM' /> <br />
+            <TitleSm title='MEET OUR CYBER SECURITY TEAM' /> <br />
             <br />
             <Title title='A team of smart & passionate creatives' className='title-bg' />
           </div>
-          <div className='grid-4 py'>
-            {teamdata.map((item) => (
+          <motion.div
+            initial={{ opacity: 0, z: -100 }}
+            animate={{ opacity: inView1 ? 1 : 0, z: inView1 ? 0 : -100, transition: { duration: 1.3 } }}
+            className='grid-5 py'
+          >
+            {teamdata1.map((item) => (
               <Card data={item} key={item.id} caption={item.post} />
             ))}
+          </motion.div>
+        </div>
+      </section>
+
+      <section className='agency bg-top' ref={bagianbd}>
+        <div className='container'>
+          <div className='heading-title'>
+            <TitleSm title='MEET OUR BIG DATA TEAM' />
+            <br />
+            <br />
+            <Title title='Another team of talented individuals' className='title-bg' />
           </div>
+          <motion.div
+            initial={{ opacity: 0, z: -100 }}
+            animate={{ opacity: inView2 ? 1 : 0, z: inView2 ? 0 : -100, transition: { duration: 1.3 } }}
+            className='grid-5 py'
+          >
+            {teamdata2.map((item) => (
+              <Card data={item} key={item.id} caption={item.post} />
+            ))}
+          </motion.div>
         </div>
       </section>
     </>
-  )
-}
-
-export default Team
+  );
+};
+export default Team;
