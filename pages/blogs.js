@@ -5,7 +5,7 @@ const Blogs = () => {
   return (
     <>
       <Head>
-        <title>Blog - MBCCoins</title>
+        <title>LogOut</title>
       </Head>
       <Blog />
     </>
