@@ -1,4 +1,4 @@
-import { Title } from "./common/Title"
+import { Title, TitleLogo } from "./common/Title"
 
 const Coins = () => {
     return (
@@ -6,7 +6,7 @@ const Coins = () => {
         <section className='brand'>
           <div className='container'>
             <div className='heading-title'>
-            <Title title='Coins' />
+            <TitleLogo caption='Coins' />
             </div>
             
           </div>

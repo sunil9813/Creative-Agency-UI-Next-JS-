@@ -20,7 +20,7 @@ const Team = () => {
           </div>
           <motion.div
             initial={{ opacity: 0, z: -100 }}
-            animate={{ opacity: inView1 ? 1 : 0, z: inView1 ? 0 : -100, transition: { duration: 1.3 } }}
+            animate={{ opacity: inView1 ? 1 : 0, z: inView1 ? 0 : -100, transition: { duration: 2 } }}
             className='grid-5 py'
           >
             {teamdata1.map((item) => (
@@ -40,7 +40,7 @@ const Team = () => {
           </div>
           <motion.div
             initial={{ opacity: 0, z: -100 }}
-            animate={{ opacity: inView2 ? 1 : 0, z: inView2 ? 0 : -100, transition: { duration: 1.3 } }}
+            animate={{ opacity: inView2 ? 1 : 0, z: inView2 ? 0 : -100, transition: { duration: 2 } }}
             className='grid-5 py'
           >
             {teamdata2.map((item) => (

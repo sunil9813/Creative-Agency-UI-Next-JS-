@@ -11,8 +11,17 @@ const About = () => {
   const motionRef = useRef(null);
 
   const motionVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+    hidden: { opacity: 0, x: -100 },
+    visible: { opacity: 1, x: 0, transition: { duration: 2 } },
+  };
+  const motionVariantsA = {
+    hidden: { opacity: 0, z: -100 },
+    visible: { opacity: 1, z: 0, transition: { duration: 3 } },
+  };
+
+  const motionVariantsB = {
+    hidden: { opacity: 0, x: 100 },
+    visible: { opacity: 1, x: 0, transition: { duration: 2 } },
   };
 
   return (
@@ -23,7 +32,7 @@ const About = () => {
             <motion.div
               initial='hidden'
               animate={inView ? 'visible' : 'hidden'}
-              variants={motionVariants}
+              variants={motionVariantsA}
               ref={motionRef}
             >
               <TitleSm title='ABOUT US' /> <br />
@@ -64,7 +73,7 @@ const About = () => {
               className='left w-40 py'
               initial='hidden'
               animate={inView ? 'visible' : 'hidden'}
-              variants={motionVariants}
+              variants={motionVariantsB}
             >
               <img src='/images/s4.jpg' alt='Img' className='round' width='90%' height='90%' />
             </motion.div>
@@ -72,7 +81,7 @@ const About = () => {
               className='right w-60 ml'
               initial='hidden'
               animate={inView ? 'visible' : 'hidden'}
-              variants={motionVariants}
+              variants={motionVariantsB}
             >
               <br />
               <br />
