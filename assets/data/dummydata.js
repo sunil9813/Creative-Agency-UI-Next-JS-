@@ -169,6 +169,7 @@ export const blogdata = [
     catgeory: "INDUSTRY",
     date: "JANUARY 12, 2023",
   },
+
   {
     id: 2,
     title: "Judul ini ada di dummydata",

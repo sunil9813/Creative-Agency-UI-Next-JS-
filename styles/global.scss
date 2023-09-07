@@ -10,10 +10,10 @@
     content: "";
     position: absolute;
     top: 0;
-    left: -40%;
+    left: -41.5%;
     width: 180%;
-    height: 200vh;
-    background-image: url("../assets/images/art-top-cropp.jpg");
+    height: 220vh;
+    background-image: url("../assets/images/art-top-cropp.png");
     background-size: cover;
     background-position: center;
     z-index: -1;
@@ -21,20 +21,21 @@
   }
   .hero-title {
     font-size: $xll-3;
-    line-height: 115px;
+    line-height: 100px;
     font-weight: 600;
-    margin: $xl-6 0;
+    margin: $xl-6 0.5;
   }
   .sub-heading {
     display: flex;
     justify-content: center;
     .titleSm {
       margin: 0 $xl-1;
+      color: $green;
     }
     span {
       font-size: $xll;
       line-height: 0;
-      color: $green;
+      color: #fff;
     }
   }
 }
