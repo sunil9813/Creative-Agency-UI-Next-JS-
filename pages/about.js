@@ -1,4 +1,3 @@
-
 import About from "@/sections/About"
 import Head from "next/head"
 
