@@ -32,14 +32,14 @@ const Header = () => {
             <Link href='/team' className={activeLink == "/team" ? "activeLink" : "none"}>
               Team
             </Link>
-            <Link href='/showcase' className={activeLink == "/showcase" ? "activeLink" : "none"}>
-            Analysis
+            <Link href='/analysis' className={activeLink == "/analysis" ? "activeLink" : "none"}>
+              Analysis
             </Link>
             <Link href='/contact' className={activeLink == "/contact" ? "activeLink" : "none"}>
               Contact
             </Link>
-            <Link href='/blogs' className={activeLink == "/blogs" ? "activeLink" : "none"}>
-              LogOut
+            <Link href='/showcase' className={activeLink == "/showcase" ? "activeLink" : "none"}>
+            LogOut
             </Link>
             <button className='button-primary'>book a consultation</button>
           </nav>
