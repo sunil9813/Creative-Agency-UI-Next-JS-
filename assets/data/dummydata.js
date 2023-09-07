@@ -239,31 +239,26 @@ export const teamdata1 = [
     id: 1,
     title: "Pandu",
     cover: "../images/Pandu.jpg",
-    
   },
   {
     id: 2,
     title: "Surya",
     cover: "../images/Surya.jpg",
-    
   },
   {
     id: 3,
-    title: "Tiffany White",
-    cover: "../images/t3.jpg",
-   
+    title: "Reza",
+    cover: "../images/Reza.JPG",
   },
   {
     id: 4,
     title: "Richard Greenwood",
     cover: "../images/t4.jpg",
-    
   },
   {
     id: 5,
     title: "Jessica Brown",
     cover: "../images/t5.jpg",
-    
   },
 ];
 export const teamdata2 = [
@@ -271,18 +266,15 @@ export const teamdata2 = [
     id: 6,
     title: "Agni",
     cover: "../images/Agni.png",
-    
   },
   {
     id: 7,
     title: "Farel",
     cover: "../images/Farel.jpg",
-    
   },
   {
     id: 8,
     title: "Fahmi",
     cover: "../images/Fahmi.png",
-   
   },
 ];
