@@ -237,52 +237,52 @@ export const blogdata = [
 export const teamdata1 = [
   {
     id: 1,
-    title: "Alexander Black",
-    cover: "../images/t1.jpg",
-    post: "FOUNDER, CEO",
+    title: "Pandu",
+    cover: "../images/Pandu.jpg",
+    
   },
   {
     id: 2,
-    title: "Anna Kovalenko",
-    cover: "../images/t2.jpg",
-    post: "FINANCE DIRECTOR",
+    title: "Surya",
+    cover: "../images/Surya.jpg",
+    
   },
   {
     id: 3,
     title: "Tiffany White",
     cover: "../images/t3.jpg",
-    post: "CREATIVE DIRECTOR",
+   
   },
   {
     id: 4,
     title: "Richard Greenwood",
     cover: "../images/t4.jpg",
-    post: "PROGRAMMER",
+    
   },
   {
     id: 5,
     title: "Jessica Brown",
     cover: "../images/t5.jpg",
-    post: "MARKETING DIRECTOR",
+    
   },
 ];
 export const teamdata2 = [
   {
     id: 6,
-    title: "Gregory Windstorm",
-    cover: "../images/t6.jpg",
-    post: "ACCOUNTING MANAGER",
+    title: "Agni",
+    cover: "../images/Agni.png",
+    
   },
   {
     id: 7,
-    title: "Anna Red",
-    cover: "../images/t7.jpg",
-    post: "PROJECT MANAGER",
+    title: "Farel",
+    cover: "../images/Farel.jpg",
+    
   },
   {
     id: 8,
-    title: "Join our team!",
-    cover: "../images/t8.jpg",
-    post: "",
+    title: "Fahmi",
+    cover: "../images/Fahmi.png",
+   
   },
 ];
