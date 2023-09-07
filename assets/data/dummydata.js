@@ -191,6 +191,48 @@ export const blogdata = [
     catgeory: "EVENTS",
     date: "OCTOBER 8, 2023",
   },
+  {
+    id: 5,
+    title: "What eleifend posuere tincidunt",
+    cover: "../images/b2.jpg",
+    catgeory: "EVENTS",
+    date: "OCTOBER 8, 2023",
+  },
+  {
+    id: 6,
+    title: "What eleifend posuere tincidunt",
+    cover: "../images/b2.jpg",
+    catgeory: "EVENTS",
+    date: "OCTOBER 8, 2023",
+  },
+  {
+    id: 7,
+    title: "What eleifend posuere tincidunt",
+    cover: "../images/b4.jpg",
+    catgeory: "EVENTS",
+    date: "OCTOBER 8, 2023",
+  },
+  {
+    id: 8,
+    title: "What eleifend posuere tincidunt",
+    cover: "../images/b2.jpg",
+    catgeory: "EVENTS",
+    date: "OCTOBER 8, 2023",
+  },
+  {
+    id: 9,
+    title: "What eleifend posuere tincidunt",
+    cover: "../images/b2.jpg",
+    catgeory: "EVENTS",
+    date: "OCTOBER 8, 2023",
+  },
+  {
+    id: 10,
+    title: "What eleifend posuere tincidunt",
+    cover: "../images/b4.jpg",
+    catgeory: "EVENTS",
+    date: "OCTOBER 8, 2023",
+  },
 ];
 export const teamdata1 = [
   {
