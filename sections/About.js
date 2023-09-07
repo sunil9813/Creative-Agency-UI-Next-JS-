@@ -16,7 +16,7 @@ const About = () => {
   };
   const motionVariantsA = {
     hidden: { opacity: 0, z: -100 },
-    visible: { opacity: 1, z: 0, transition: { duration: 3 } },
+    visible: { opacity: 1, z: 0, transition: { duration: 4 } },
   };
 
   const motionVariantsB = {
@@ -62,7 +62,7 @@ const About = () => {
               className='right w-40 ml'
               initial='hidden'
               animate={inView ? 'visible' : 'hidden'}
-              variants={motionVariants}
+              variants={motionVariantsA}
             >
               <img src='/images/s1.jpg' alt='Img' className='round' width='80%' height='80%' />
             </motion.div>
@@ -73,7 +73,7 @@ const About = () => {
               className='left w-40 py'
               initial='hidden'
               animate={inView ? 'visible' : 'hidden'}
-              variants={motionVariantsB}
+              variants={motionVariantsA}
             >
               <img src='/images/s4.jpg' alt='Img' className='round' width='90%' height='90%' />
             </motion.div>
@@ -115,7 +115,7 @@ const About = () => {
               className='right w-40 ml'
               initial='hidden'
               animate={inView ? 'visible' : 'hidden'}
-              variants={motionVariants}
+              variants={motionVariantsA}
             >
               <img src='/images/s1.1.jpg' alt='Img' className='round' width='80%' height='80%' />
             </motion.div>
