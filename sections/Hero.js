@@ -1,14 +1,14 @@
 import { home } from "@/assets/data/dummydata";
 import Banner from "@/components/Banner";
-import { motion } from 'framer-motion'; 
-import { useInView } from 'react-intersection-observer';
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import Coins from "@/components/Coins";
 import Expertise from "@/components/Expertise";
 import ShowCase from "@/components/ShowCase";
 import Testimonial from "@/components/Testimonial";
 import { Title, TitleLogo, TitleSm } from "@/components/common/Title";
 import { BlogCard, Brand } from "@/components/router";
-import React,{useRef} from "react";
+import React, { useRef } from "react";
 
 const Hero = () => {
   const [inView, ref] = useInView({ triggerOnce: true });
@@ -16,35 +16,37 @@ const Hero = () => {
 
   const motionVariants = {
     hidden: { opacity: 0, z: -100 },
-    visible: { opacity: 1, z: 0, transition: { duration: 2 } },
+    visible: {
+      opacity: 1,
+      z: 0,
+      transition: { type: "spring", stiffness: "10" },
+    },
   };
 
   return (
     <>
       <section className="hero">
         <div className="container">
-          <motion.div
-          initial='hidden'
-          animate={inView ? 'visible' : 'hidden'}
-          variants={motionVariants}
-          ref={motionRef}
-          >
           <TitleLogo caption="Coins" title="MBC" className="logobg" />
-          <h1 className="hero-title">CRYPTOCURRENCY</h1>
-          </motion.div>
-
-          <div className="sub-heading">
           <motion.div
-          initial='hidden'
-          animate={inView ? 'visible' : 'hidden'}
-          variants={motionVariants}
-          ref={motionRef}
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            variants={motionVariants}
+            ref={motionRef}
           >
-          <TitleSm title="Multimedia" /> <span>.</span>
-          <TitleSm title="Big Data" /> <span>.</span>
-          <TitleSm title="Cybersecurity" />
+            <h1 className="hero-title">CRYPTOCURRENCY</h1>
           </motion.div>
-
+          <div className="sub-heading">
+            {/* <motion.div
+              initial="hidden"
+              animate={inView ? "visible" : "hidden"}
+              variants={motionVariants}
+              ref={motionRef}
+            > */}
+            <TitleSm title="Multimedia" /> <span>.</span>
+            <TitleSm title="Big Data" /> <span>.</span>
+            <TitleSm title="Cybersecurity" />
+            {/* </motion.div> */}
           </div>
         </div>
       </section>
@@ -53,10 +55,11 @@ const Hero = () => {
           <div className="heading-title">
             <TitleLogo caption="The last digital agency you ll ever need" />
             <p>
-              Suspendisse ut magna porttitor, sollicitudin ligula at, molestie
-              dolor. Vivamus a ligula ut velit placerat egestas at id leo. Nulla
-              ac volutpat nunc. Nulla facilisi. Pellentesque tempus tellusut
-              magna porttitor scelerisque.
+              A cryptocurrency is a digital currency, which is an alternative
+              form of payment created using encryption algorithms. The use of
+              encryption technologies means that cryptocurrencies function both
+              as a currency and as a virtual accounting system. To use
+              cryptocurrencies, you need a cryptocurrency wallet.
             </p>
           </div>
           <Coins />
