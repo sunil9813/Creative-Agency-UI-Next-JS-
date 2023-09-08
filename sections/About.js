@@ -1,9 +1,8 @@
-import Banner from "@/components/Banner";
+
 import React, { useRef } from 'react';
 import { motion } from 'framer-motion'; 
 import { useInView } from 'react-intersection-observer';
-import Brand from "@/components/Brand";
-import Testimonial from "@/components/Testimonial";
+
 import { Title, TitleLogo, TitleSm } from "@/components/common/Title";
 
 const About = () => {
