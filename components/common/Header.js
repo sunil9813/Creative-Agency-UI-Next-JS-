@@ -39,9 +39,8 @@ const Header = () => {
               Contact
             </Link>
             <Link href='/showcase' className={activeLink == "/showcase" ? "activeLink" : "none"}>
-            LogOut
             </Link>
-            <button className='button-primary'>book a consultation</button>
+            <button className='button-primary'>Log out</button>
           </nav>
           <button onClick={() => setOpen(!open)}>{open ? <AiOutlineClose size={25} /> : <RiMenu4Line size={25} />}</button>
         </div>

@@ -24,22 +24,22 @@ const Footer = () => {
             <ul>
               <h3>COMPANY</h3>
               <li>
-                <Link href='/'>About agency</Link>
+                <Link href='/'>Home</Link>
               </li>
               <li>
-                <Link href='/'>Our team</Link>
+                <Link href='/'>About</Link>
               </li>
               <li>
-                <Link href='/'>Showcase</Link>
+                <Link href='/'>Team</Link>
               </li>
               <li>
-                <Link href='/'>Blog</Link>
-              </li>
-              <li>
-                <Link href='/'>Demo design system</Link>
+                <Link href='/'>Analysis</Link>
               </li>
               <li>
                 <Link href='/'>Contact</Link>
+              </li>
+              <li>
+                <Link href='/'>Log out</Link>
               </li>
             </ul>
             <ul>

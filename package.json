@@ -21,9 +21,14 @@
     "react-router-dom": "^6.15.0",
     "react-slick": "^0.29.0",
     "sass": "^1.61.0",
+<<<<<<< HEAD
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "tailwindcss": "^3.3.3"
+=======
+    "slick-carousel": "^1.8.1",
+    "window": "^4.2.7"
+>>>>>>> a81b3173fcc6c32d43148102acf9223a1efb6102
   }
 }
