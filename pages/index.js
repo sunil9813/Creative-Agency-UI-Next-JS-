@@ -1,4 +1,5 @@
 import { Hero } from "@/sections"
+import Table from "@/utils/Table"
 import Head from "next/head"
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
         <title>MBCCoins</title>
       </Head>
       <Hero />
+      <Table />
     </>
   )
 }

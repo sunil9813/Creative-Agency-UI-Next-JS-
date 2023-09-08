@@ -62,7 +62,7 @@ const Hero = () => {
               cryptocurrencies, you need a cryptocurrency wallet.
             </p>
           </div>
-          <Coins />
+          {/* <Coins />
           <div className="hero-content grid-4">
             {home.map((item, i) => (
               <div className="box" key={i}>
@@ -70,8 +70,8 @@ const Hero = () => {
                 <br />
                 <h3>{item.title}</h3>
               </div>
-            ))}
-          </div>
+            ))} */}
+          {/* </div> */}
         </div>
       </section>
     </>
