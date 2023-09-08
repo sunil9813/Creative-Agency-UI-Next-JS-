@@ -147,27 +147,27 @@ export const teamdata1 = [
   {
     id: 1,
     title: "Pandu",
-    cover: "../images/Pandu.jpg",
+    cover: "../images/pandu.png",
   },
   {
     id: 2,
     title: "Surya",
-    cover: "../images/Surya.jpg",
+    cover: "../images/surya.png",
   },
   {
     id: 3,
     title: "Reza",
-    cover: "../images/Reza.JPG",
+    cover: "../images/reza.png",
   },
   {
     id: 4,
-    title: "Richard Greenwood",
-    cover: "../images/t4.jpg",
+    title: "Thufail",
+    cover: "../images/thufail.png",
   },
   {
     id: 5,
-    title: "Jessica Brown",
-    cover: "../images/t5.jpg",
+    title: "Yesaya",
+    cover: "../images/yesaya.png",
   },
 ];
 export const teamdata2 = [
@@ -179,11 +179,22 @@ export const teamdata2 = [
   {
     id: 7,
     title: "Farel",
-    cover: "../images/Farel.jpg",
+    cover: "../images/farel.png",
   },
   {
     id: 8,
     title: "Fahmi",
-    cover: "../images/Fahmi.png",
+    cover: "../images/fahmi.png",
   },
+  {
+    id: 9,
+    title: "Meidita",
+    cover: "../images/meidita.png",
+  },
+  {
+    id: 10,
+    title: "Adesafa",
+    cover: "../images/adesafa.png",
+  },
+  
 ];
