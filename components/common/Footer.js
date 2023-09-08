@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { TitleLogo } from "./Title"
-import { BsFacebook } from "react-icons/bs"
-import { AiFillBehanceCircle, AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai"
+import { BsFacebook, BsLine } from "react-icons/bs"
+import { AiFillAlert, AiFillBehanceCircle, AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai"
 
 const Footer = () => {
   return (
@@ -24,7 +24,7 @@ const Footer = () => {
             <ul>
               <h3>COMPANY</h3>
               <li>
-                <Link href='/home'>Home</Link>
+                <Link href='/'>Home</Link>
               </li>
               <li>
                 <Link href='/about'>About</Link>
@@ -46,23 +46,23 @@ const Footer = () => {
               <h3>CONNECT</h3>
               <div className='connect'>
                 <li>
-                  <Link href='https://www.instagram.com/mbclab/?hl=id'>
-                    <BsFacebook size={25} />
+                  <Link href='https://liff.line.me/1645278921-kWRPP32q/?accountId=sok8073r'>
+                    <BsLine size={25} />
                   </Link>
                 </li>
                 <li>
-                  <Link href='/'>
+                  <Link href='https://github.com/thufailalfath11/MBCcoins_Website.git'>
                     <AiFillGithub size={25} />
                   </Link>
                 </li>
                 <li>
-                  <Link href='/'>
+                  <Link href='https://www.instagram.com/mbclab/?hl=id'>
                     <AiFillInstagram size={25} />
                   </Link>
                 </li>
                 <li>
                   <Link href='/'>
-                    <AiFillLinkedin size={25} />
+                    <AiFillAlert size={25} />
                   </Link>
                 </li>
               </div>
