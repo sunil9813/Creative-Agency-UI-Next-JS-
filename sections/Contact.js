@@ -1,4 +1,4 @@
-import { Title, TitleSm } from "@/components/common/Title"
+import { Title, TitleLogo, TitleSm } from "@/components/common/Title"
 import React from "react"
 import { AiFillBehanceCircle, AiFillInstagram, AiFillLinkedin } from "react-icons/ai"
 import { BiUserCircle } from "react-icons/bi"
@@ -14,7 +14,7 @@ const Contact = () => {
           <div className='heading-title'>
             <TitleSm title='CONTACT' /> <br />
             <br />
-            <Title title="Let's start right now!" className='title-bg' />
+            <TitleLogo caption="Let's start right now!" className='title-bg' />
           </div>
           <div className='content py flex1'>
             <div className='left w-30'>
