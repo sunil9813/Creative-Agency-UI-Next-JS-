@@ -1,34 +1,26 @@
-import axios from 'axios';
-import { useParams } from 'react-router-dom';
-import React, { useState, useEffect } from 'react';
-
+import axios from "axios";
+import { useState, useEffect } from "react";
+import {useParams} from `next/navigation`
 const Coin = () => {
-  const { id } = useParams();
-  const [coin, setCoin] = useState({});
-  const url = `https://api.coingecko.com/api/v3/coins/${id}`;
 
+  const params = useParams()
+  const[coin, setCoin] = useState({})
+
+  const url =`https://api.coingecko.com/api/v3/coins/${params.coinId}`
+  
   useEffect(() => {
-    axios
-      .get(url)
-      .then((res) => {
-        setCoin(res.data);
-      })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-      });
-  }, [url]);
-
+    axios.get(url).then((res) => {
+      setCoin(res.data)
+    }).catch((error) =>{
+      console.log(error)
+    })
+  }, [])
+  
   return (
     <div>
-      {coin.id ? (
-        <div>
-          <h1>{coin.id}</h1>
-          {/* Tampilkan informasi lainnya tentang koin di sini */}
-        </div>
-      ) : (
-        <p>Loading...</p>
-      )}
+      <h1>{coin.id}</h1>
     </div>
+     
   );
 };
 
