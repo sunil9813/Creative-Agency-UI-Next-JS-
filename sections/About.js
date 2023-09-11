@@ -1,9 +1,13 @@
+<<<<<<< HEAD
+
+import React, { useRef } from 'react';
+=======
 import Banner from "@/components/Banner";
 import React, { useRef, useState, useEffect } from 'react';
+>>>>>>> a81b3173fcc6c32d43148102acf9223a1efb6102
 import { motion } from 'framer-motion'; 
 import { useInView } from 'react-intersection-observer';
-import Brand from "@/components/Brand";
-import Testimonial from "@/components/Testimonial";
+
 import { Title, TitleLogo, TitleSm } from "@/components/common/Title";
 
 const About = () => {
