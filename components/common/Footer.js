@@ -10,25 +10,25 @@ const Footer = () => {
         <div className='container'>
           <div className='grid-4'>
             <div className='logo'>
-              <TitleLogo title='creative' caption='7' className='logobg' />
+              <TitleLogo title='Sippy' caption='Rishi' className='logobg' />
               <br />
               <span>
-                Questions? Reach us <br /> Monday – Friday from 9 am to 6 pm
+                Questions? <br /> Reach to me  <br /> 24*7 available
               </span>
               <br />
               <br />
-              <h3>+1 001 234 5678</h3>
+              <h3>+91 7018548653</h3>
               <br />
               <button className='button-primary'>Request for quote</button>
             </div>
             <ul>
-              <h3>COMPANY</h3>
+              <h3>Quick Links</h3>
               <li>
-                <Link href='/'>About agency</Link>
+                <Link href='/'>About Me</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href='/'>Our team</Link>
-              </li>
+              </li> */}
               <li>
                 <Link href='/'>Showcase</Link>
               </li>
@@ -48,6 +48,9 @@ const Footer = () => {
                 <Link href='/'>Web Design & Development</Link>
               </li>
               <li>
+                <Link href='/'>App Design & Development</Link>
+              </li>
+              <li>
                 <Link href='/'>Branding & Creative Services</Link>
               </li>
               <li>
@@ -55,6 +58,12 @@ const Footer = () => {
               </li>
               <li>
                 <Link href='/'>E-Commerce</Link>
+              </li>
+              <li>
+                <Link href='/'>SEO</Link>
+              </li>
+              <li>
+                <Link href='/'>Paid Ads / PPC</Link>
               </li>
             </ul>
             <ul>
@@ -85,10 +94,10 @@ const Footer = () => {
           </div>
           <div className='legal connect py'>
             <div className='text'>
-              <span>© 2023 THE SEVEN. ALL RIGHTS RESERVED.</span>
+              <span>© 2023 Rishi Sippy. ALL RIGHTS RESERVED.</span>
             </div>
             <div className='connect'>
-              <span>GORKCODER COMPANY</span>
+              <span>Rishi Sippy</span>
               <span> &nbsp; | &nbsp; </span>
               <span>TERMS & CONDITIONS</span>
             </div>
