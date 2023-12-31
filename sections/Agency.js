@@ -9,18 +9,19 @@ const Agency = () => {
       <section className='agency bg-top'>
         <div className='container'>
           <div className='heading-title'>
-            <TitleSm title='ABOUT AGENCY' /> <br />
+            <TitleSm title='ABOUT ME' /> <br />
             <br />
-            <Title title='The last digital agency you will ever need!' className='title-bg' />
+            <Title title='The last dedicated developer  you will ever need !' className='title-bg' />
           </div>
 
           <div className='content flex1'>
             <div className='left w-60 py'>
-              <TitleSm title='Turning your business ideas into smart digital products since 2001' />
-              <p className='desc-p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus eleifend magna, molestie iaculis sem pulvinar eu. Etiam non dui felis. Proin posuere dapibus magna laoreet posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dignissim, sem eget sollicitudin tempor, libero velit aliquam enim, vel egestas tortor ante quis sem.</p>
+              <TitleSm title='Lets embark on a journey of innovation together' />
+              <p className='desc-p'>I'm Rishi, a passionate Full Stack Developer with over four years of hands-on experience in shaping digital products and CMS solutions. My journey in the dynamic world of web development has been fueled by a dedication to innovation, a mastery of cutting-edge technologies, and a commitment to delivering exceptional user experiences. 
+              My proficiency spans across a spectrum of technologies, including React.js, Next.js, Node.js, Vue.js, WordPress, and Shopify. This diverse skill set empowers me to design and develop robust applications that not only meet but exceed client expectations.I specialize in the art of crafting digital products that resonate with users. By seamlessly integrating various frameworks and platforms, I ensure the delivery of scalable and feature-rich solutions that stand out in the digital landscape.Beyond coding, I bring a unique blend of technical expertise and marketing finesse. Proficient in SEO strategies and well-versed in paid advertising, particularly on platforms like Facebook, I contribute to optimizing online visibility and driving targeted traffic.</p>
               <div className='grid-3'>
                 <div className='box'>
-                  <h1 className='indigo'>10+</h1>
+                  <h1 className='indigo'>5+</h1>
                   <h3>Years of experience</h3>
                 </div>
                 <div className='box'>
@@ -29,7 +30,7 @@ const Agency = () => {
                 </div>
                 <div className='box'>
                   <h1 className='indigo'>12+</h1>
-                  <h3>Industry awards</h3>
+                  <h3>Team working remotely</h3>
                 </div>
               </div>
             </div>
@@ -43,9 +44,9 @@ const Agency = () => {
               <img src='/images/s4.jpg' alt='Img' className='round' width='100%' height='100%' />
             </div>
             <div className='right w-60 ml'>
-              <TitleSm title='Our mission' />
+              <TitleSm title='My Mission' />
               <br />
-              <p className='misson-p'>Fusce fringilla justo vel dui consectetur, fringilla maximus ante malesuada. Suspendisse facilisis nisl augue, ut sollicitudin lectus ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis esse vitae officia nostrum facere. Fugiat voluptates, expedita dolore at perferendis quae libero fuga consequatur veniam, eius non fugit nulla vitae?</p>
+              <p className='misson-p'>I believe that seamless, bug-free interactions are the cornerstone of user satisfaction. My mission is to meticulously craft digital solutions that not only meet but exceed user expectations. By dedicating myself to the pursuit of perfection in code, I aim to create a digital landscape where users can navigate effortlessly, free from the disruptions of glitches or bugs.</p>
             </div>
           </div>
         </div>

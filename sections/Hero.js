@@ -12,21 +12,21 @@ const Hero = () => {
     <>
       <section className='hero'>
         <div className='container'>
-          <TitleLogo title='creative' caption='7' className='logobg' />
-          <h1 className='hero-title'>WE BUILD DIGITAL EXPERIENCES</h1>
-
+          <TitleLogo title='Sippy' caption='Rishi' className='logobg' />
+          <h1 className='hero-title'>Transforming ideas into products</h1>
           <div className='sub-heading'>
             <TitleSm title='WEBSITES' /> <span>.</span>
-            <TitleSm title='BRANDING' /> <span>.</span>
-            <TitleSm title='DIGITAL MARKETING' />
+            <TitleSm title='APPS' /> <span>.</span>
+            <TitleSm title='PRODUCTS' /> <span>.</span>
+            <TitleSm title='CMS' />
           </div>
         </div>
       </section>
       <section className='hero-sec'>
         <div className='container'>
           <div className='heading-title'>
-            <Title title='The last digital agency you ll ever need' />
-            <p>Suspendisse ut magna porttitor, sollicitudin ligula at, molestie dolor. Vivamus a ligula ut velit placerat egestas at id leo. Nulla ac volutpat nunc. Nulla facilisi. Pellentesque tempus tellusut magna porttitor scelerisque.</p>
+            <Title title='The last dedicated developer  you will ever need' />
+            <p>I am building products every day.</p>
           </div>
           <div className='hero-content grid-4'>
             {home.map((item, i) => (
