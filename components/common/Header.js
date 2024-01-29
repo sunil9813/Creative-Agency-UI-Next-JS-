@@ -19,7 +19,7 @@ const Header = () => {
         <div className='container'>
           <div className='logo'>
             <Link href='/'>
-              <TitleLogo title='creative' caption='7' className='logomin' />
+              <TitleLogo title='Sippy' caption='Rishi' className='logomin' />
             </Link>
           </div>
           <nav className={open ? "openMenu" : "closeMenu"} onClick={() => setOpen(null)}>
@@ -27,11 +27,11 @@ const Header = () => {
               Home
             </Link>
             <Link href='/agency' className={activeLink == "/agency" ? "activeLink" : "none"}>
-              Agency
+              About Me
             </Link>
-            <Link href='/team' className={activeLink == "/team" ? "activeLink" : "none"}>
+            {/* <Link href='/team' className={activeLink == "/team" ? "activeLink" : "none"}>
               Team
-            </Link>
+            </Link> */}
             <Link href='/services' className={activeLink == "/services" ? "activeLink" : "none"}>
               Services
             </Link>
