@@ -7,7 +7,7 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: $dark;
-  color: $white;
+  color: #2d3a4a;
 }
 .container {
   max-width: 90%;
@@ -16,7 +16,7 @@ body {
 
 a {
   text-decoration: none;
-  color: $white;
+  color: #003366;
   text-transform: capitalize;
 }
 textarea,
@@ -26,7 +26,7 @@ button {
   padding: 0;
   margin: 0;
   border: none;
-  color: $white;
+  color: #003366;
   outline: none;
 }
 .flex {

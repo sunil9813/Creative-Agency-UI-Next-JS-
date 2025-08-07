@@ -1,13 +1,17 @@
-$indigo: #845aff;
+$indigo: #003366;
 $white: #ffffff;
 $dark: #080e10;
 $green: #00dc93;
-$gradient: linear-gradient(203deg, rgba(192, 90, 255, 1) 0%, rgba(67, 39, 158, 1) 100%);
-$gradient2: linear-gradient(250deg, rgba(255, 85, 219, 1) 24%, rgba(52, 108, 255, 1) 100%);
+$dark-blue: #003366;
+$gradient: linear-gradient(203deg, rgba(0, 51, 102, 1) 0%, rgba(0, 220, 147, 1) 100%);
+$gradient2: linear-gradient(250deg, rgba(0, 220, 147, 1) 24%, rgba(0, 51, 102, 1) 100%);
 
 .green {
   color: $green;
 }
 .indigo {
   color: $indigo;
+}
+.dark-blue {
+  color: $dark-blue;
 }

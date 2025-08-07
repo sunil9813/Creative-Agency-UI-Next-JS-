@@ -1,4 +1,5 @@
 header {
+  background: #fff;
   padding: $s 0;
   border-bottom: 1px solid rgba($white, 0.2);
   position: sticky;
@@ -8,8 +9,17 @@ header {
   .container {
     @include flex(center, space-between, none);
     nav {
+      background: transparent;
+      display: flex;
+      align-items: center;
       a {
         margin: 0 $xl-2;
+      }
+      .button-primary {
+        margin-left: 2rem;
+        margin-right: 0;
+        width: auto;
+        align-self: center;
       }
     }
   }
@@ -31,14 +41,21 @@ header {
 @media screen and (max-width: 800px) {
   header {
     nav {
-      display: none;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      .button-primary {
+        align-self: flex-end;
+        width: auto;
+        margin: 10px 0 0 0;
+      }
     }
     .openMenu {
       position: absolute;
       top: 75px;
       left: 0;
       width: 100%;
-      height: 40vh;
+      height: auto;
       padding: 20px;
       background: $dark;
       display: flex;
@@ -50,9 +67,11 @@ header {
         display: flex;
         margin-bottom: 30px !important;
       }
-    }
-    .button-primary {
-      display: none;
+      .button-primary {
+        align-self: flex-end;
+        width: auto;
+        margin: 10px 0 0 0;
+      }
     }
   }
   .activeLink {

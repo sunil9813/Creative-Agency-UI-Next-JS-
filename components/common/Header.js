@@ -4,10 +4,13 @@ import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
 import { RiMenu4Line } from "react-icons/ri"
 import { AiOutlineClose } from "react-icons/ai"
+import ConsultationModal from "./ConsultationModal";
+import Image from "next/image"
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState("")
   const [open, setOpen] = useState(false)
+  const [showConsultation, setShowConsultation] = useState(false);
 
   const router = useRouter()
   useEffect(() => {
@@ -19,7 +22,13 @@ const Header = () => {
         <div className='container'>
           <div className='logo'>
             <Link href='/'>
-              <TitleLogo title='creative' caption='7' className='logomin' />
+              <Image 
+                src="/Uburiza.png" 
+                alt="UBURIZA SOLUTIONS" 
+                width={180} 
+                height={60} 
+                className="header-logo"
+              />
             </Link>
           </div>
           <nav className={open ? "openMenu" : "closeMenu"} onClick={() => setOpen(null)}>
@@ -44,11 +53,12 @@ const Header = () => {
             <Link href='/contact' className={activeLink == "/contact" ? "activeLink" : "none"}>
               Contact
             </Link>
-            <button className='button-primary'>book a consultation</button>
+            <button className='button-primary' onClick={() => setShowConsultation(true)}>Consultation</button>
           </nav>
           <button onClick={() => setOpen(!open)}>{open ? <AiOutlineClose size={25} /> : <RiMenu4Line size={25} />}</button>
         </div>
       </header>
+      <ConsultationModal isOpen={showConsultation} onClose={() => setShowConsultation(false)} />
     </>
   )
 }

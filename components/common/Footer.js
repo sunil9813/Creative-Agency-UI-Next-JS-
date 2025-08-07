@@ -2,6 +2,7 @@ import Link from "next/link"
 import { TitleLogo } from "./Title"
 import { BsFacebook } from "react-icons/bs"
 import { AiFillBehanceCircle, AiFillInstagram, AiFillLinkedin } from "react-icons/ai"
+import Image from "next/image"
 
 const Footer = () => {
   return (
@@ -10,7 +11,13 @@ const Footer = () => {
         <div className='container'>
           <div className='grid-4'>
             <div className='logo'>
-              <TitleLogo title='creative' caption='7' className='logobg' />
+              <Image 
+                src="/Uburiza.png" 
+                alt="UBURIZA SOLUTIONS" 
+                width={200} 
+                height={70} 
+                className="footer-logo"
+              />
               <br />
               <span>
                 Questions? Reach us <br /> Monday – Friday from 9 am to 6 pm
@@ -85,7 +92,7 @@ const Footer = () => {
           </div>
           <div className='legal connect py'>
             <div className='text'>
-              <span>© 2023 THE SEVEN. ALL RIGHTS RESERVED.</span>
+              <span>© 2023 UBURIZA SOLUTIONS. ALL RIGHTS RESERVED.</span>
             </div>
             <div className='connect'>
               <span>GORKCODER COMPANY</span>

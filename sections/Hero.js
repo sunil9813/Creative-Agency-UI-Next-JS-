@@ -5,20 +5,44 @@ import ShowCase from "@/components/ShowCase"
 import Testimonial from "@/components/Testimonial"
 import { Title, TitleLogo, TitleSm } from "@/components/common/Title"
 import { BlogCard, Brand } from "@/components/router"
-import React from "react"
+import React, { useEffect, useState } from "react"
+import Image from "next/image"
 
 const Hero = () => {
+  const [animateServices, setAnimateServices] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setAnimateServices(true);
+    }, 1000);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
       <section className='hero'>
         <div className='container'>
-          <TitleLogo title='creative' caption='7' className='logobg' />
+          <Image 
+            src="/Uburiza.png" 
+            alt="UBURIZA SOLUTIONS" 
+            width={250} 
+            height={80} 
+            className="hero-logo"
+          />
           <h1 className='hero-title'>WE BUILD DIGITAL EXPERIENCES</h1>
 
           <div className='sub-heading'>
-            <TitleSm title='WEBSITES' /> <span>.</span>
-            <TitleSm title='BRANDING' /> <span>.</span>
-            <TitleSm title='DIGITAL MARKETING' />
+            <div className={`service-item ${animateServices ? 'slide-in' : ''}`}>
+              <TitleSm title='WEBSITES' />
+            </div>
+            <span className={`dot ${animateServices ? 'fade-in' : ''}`}>.</span>
+            <div className={`service-item ${animateServices ? 'slide-in' : ''}`} style={{animationDelay: '0.3s'}}>
+              <TitleSm title='BRANDING' />
+            </div>
+            <span className={`dot ${animateServices ? 'fade-in' : ''}`} style={{animationDelay: '0.6s'}}>.</span>
+            <div className={`service-item ${animateServices ? 'slide-in' : ''}`} style={{animationDelay: '0.9s'}}>
+              <TitleSm title='DIGITAL MARKETING' />
+            </div>
           </div>
         </div>
       </section>
